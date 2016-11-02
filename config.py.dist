@@ -19,6 +19,9 @@ SEGMENTS = [
 # Show the machine's hostname. Mostly used when ssh-ing into other machines
     'hostname',
 
+# Show the current AWS profile
+    'aws_profile',
+
 # Show a padlock when ssh-ing from another machine
     'ssh',
 
