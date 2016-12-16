@@ -18,8 +18,8 @@ def getOppositeColor(r,g,b):
     #print "hls is"
     #print hls
     opp = list(hls[:])
-    #opp[0] = (opp[0]+0.5)%1 # reverse hue (a.k.a. color), reversing tends to be jarring
-    opp[0] = (opp[0]+0.2)%1 # shift hue (a.k.a. color)
+    opp[0] = (opp[0]+0.5)%1 # reverse hue (a.k.a. color), reversing tends to be jarring
+    # opp[0] = (opp[0]+0.2)%1 # shift hue (a.k.a. color)
     if opp[1] > 255/2:   # for level you want to make sure they
         opp[1] -= 255/2  # are quite different so easily readable
     else:
