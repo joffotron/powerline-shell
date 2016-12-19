@@ -6,4 +6,4 @@ def add_aws_profile_segment(powerline):
         return
 
     aws_profile = os.getenv('AWS_DEFAULT_PROFILE') or 'default'
-    powerline.append(' %s ' % aws_profile, Color.SSH_FG, Color.SSH_BG )
+    powerline.append(u'\u2601' + ' %s ' % aws_profile, Color.SSH_FG, Color.SSH_BG )
